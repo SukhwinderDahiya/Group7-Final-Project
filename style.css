@@ -538,3 +538,452 @@ padding:2px;
 
 
 
+/*Slider*/
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+figure { 
+  margin: 0; background: #101010;
+  font-family: Istok Web, sans-serif;
+  font-weight: 100;
+}
+div#captioned-gallery { 
+  width: 100%; overflow: hidden; 
+}
+figure.slider { 
+  position: relative; width: 500%;
+  font-size: 0; animation: 30s slidy infinite; 
+}
+figure.slider figure { 
+  width: 20%; height: auto;
+  display: inline-block;  position: inherit; 
+}
+figure.slider img { width: 100%; height: 300px; }
+figure.slider figure figcaption { 
+  position: absolute; bottom: 0;
+  background: rgba(0,0,0,0.4);
+  color: #fff; width: 100%;
+  font-size: 2rem; padding: .6rem; 
+}
+
+
+
+
+figure.slider2 { 
+  position: relative;
+    width: 500%;
+    font-size: 0;
+    animation: 10s slidy infinite;
+     /*opacity: 0.5;*/
+}
+figure.slider2 figure { 
+  width: 20%; height: auto;
+  display: inline-block;  position: inherit; 
+}
+figure.slider2 img { width: 25%; height: 100px; }
+figure.slider2 figure figcaption { 
+  position: absolute; bottom: 0;
+  background: rgba(0,0,0,0.4);
+  color: #fff; width: 100%;
+  font-size: 1rem; padding: .6rem;
+  font-weight: 200px;
+
+}
+
+
+/*map*/
+
+.responsive-map{
+overflow: hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+.responsive-map iframe{
+left:0;
+top:0;
+height:90%;
+width:100%;
+position:absolute;
+}
+
+
+/* faded Animation*/
+
+.containerAnimation {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.containerAnimation:hover .image {
+  opacity: 0.3;
+}
+
+.containerAnimation:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+
+#lightbox{
+	position: absolute;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	text-align: center;
+	line-height: 0;
+	}
+
+#lightbox a img{ border: none; }
+
+#outerImageContainer{
+	position: relative;
+	background-color: #fff;
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+	}
+
+#imageContainer{
+	padding: 10px;
+	}
+
+#loading{
+	position: absolute;
+	top: 40%;
+	left: 0%;
+	height: 25%;
+	width: 100%;
+	text-align: center;
+	line-height: 0;
+	}
+#hoverNav{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 10;
+	}
+#imageContainer>#hoverNav{ left: 0;}
+#hoverNav a{ outline: none;}
+
+#prevLink, #nextLink{
+	width: 49%;
+	height: 100%;
+	background: transparent url(../images/blank.gif) no-repeat; /* Trick IE into showing hover */
+	display: block;
+	}
+#prevLink { left: 0; float: left;}
+#nextLink { right: 0; float: right;}
+#prevLink:hover, #prevLink:visited:hover { background: url(../images/prevlabel.gif) left 15% no-repeat; }
+#nextLink:hover, #nextLink:visited:hover { background: url(../images/nextlabel.gif) right 15% no-repeat; }
+
+
+#imageDataContainer{
+	font: 10px Verdana, Helvetica, sans-serif;
+	background-color: #fff;
+	margin: 0 auto;
+	line-height: 1.4em;
+	overflow: auto;
+	width: 100%	
+	}
+
+#imageData{	padding:0 10px; color: #666; }
+#imageData #imageDetails{ width: 70%; float: left; text-align: left; }	
+#imageData #caption{ font-weight: bold;	}
+#imageData #numberDisplay{ display: block; clear: left; padding-bottom: 1.0em;	}			
+#imageData #bottomNavClose{ width: 66px; float: right;  padding-bottom: 0.7em;	}	
+		
+#overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 90;
+	width: 100%;
+	height: 500px;
+	background-color: #000;
+	}
+
+
+
+
+  /*sinup form*/
+.form-signup{
+  display: block;
+  width: 330px;
+  min-height:400px;
+  padding: 30px 20px 10px 20px;
+  background: aliceblue;
+  margin: 0 auto;
+  margin-top:50px;
+  border-radius: 10px;
+}
+.form-signup a{
+  text-decoration: none;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.form-signup label{
+  margin-top: 0;
+  display: block;
+}
+.form-signup input{
+  border: none;
+  border-bottom: 2px solid #378cc0;
+  background: none;
+  color: darkgreen;
+  float: right;
+  margin-right: 5px;
+}
+.form-signup textarea{
+  border: none;
+  border: 2px solid #378cc0;
+  background: #378cc0;
+  color: darkgreen;
+  float: right;
+  margin-right: 12px;
+}
+.form-signup input[type=submit]{
+  border: none;
+  background: green;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 0px;
+  cursor: pointer;
+  padding: 5px 12px;
+  float: right;
+  margin-top: 10px;
+  display: block;
+  margin-right: 13px;
+}
+.form-signup input[type=reset]{
+  border: none;
+  background: green;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 0px;
+  cursor: pointer;
+  padding: 5px 12px;
+  float: right;
+  margin-top: 10px;
+  display: block;
+  margin-right: 10px;
+}
+.form-signup p{
+  display: block;
+  margin-top: 90px;
+  margin-right: -130px;
+  text-align: center;
+  color: red;
+  transition: .300ms ease-in-out all;
+  font-size: 14px;
+}
+
+
+/*Validation css*/
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+    .form-control label {
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+
+    .form-control input {
+        border: 2px solid #f0f0f0;
+        border-radius: 4px;
+        display: block;
+        font-family: inherit;
+        font-size: 14px;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .form-control textarea {
+        border: 2px solid #f0f0f0;
+        border-radius: 4px;
+        display: block;
+        font-family: inherit;
+        font-size: 14px;
+        padding: 10px;
+        width: 100%;
+    }
+
+        .form-control input:focus {
+            outline: 0;
+            border-color: #777;
+        }
+
+         .form-control textarea:focus {
+            outline: 0;
+            border-color: #777;
+        }
+
+
+    .form-control.success input {
+        border-color: #2ecc71;
+    }
+
+ .form-control.success textarea {
+        border-color: #2ecc71;
+    }
+
+
+    .form-control.error input {
+        border-color: #e74c3c;
+    }
+
+    .form-control.error textarea {
+        border-color: #e74c3c;
+    }
+
+    .form-control i {
+        visibility: hidden;
+        position: absolute;
+        top: 8px;
+        right: 10px;
+    }
+
+    .form-control.success i.fa-check-circle {
+        color: #2ecc71;
+        visibility: visible;
+    }
+
+    .form-control.error i.fa-exclamation-circle {
+        color: #e74c3c;
+        visibility: visible;
+    }
+
+    .form-control small {
+        color: #e74c3c;
+        position: absolute;
+        top: 30px;
+        left: 5px;
+        visibility: hidden;
+    }
+
+    .form-control.error small {
+        visibility: visible;
+    }
+
+.form button {
+    background-color: #0072ff;
+    border: 2px solid #0072ff;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+}
+/*Captcha Css*/
+.refbutton{
+        background: green !important;
+        border: 2px solid #0072ff !important;
+        border-radius: 4px !important;
+        color: #fff !important;
+        font-size: 10px !important;
+        padding: 5px !important;
+        margin-top: 6px !important;
+        width: auto!important;
+
+}
+
+.subbutton{
+        background: chocolate !important;
+        border: 2px solid #0072ff !important;
+        border-radius: 4px !important;
+        color: #fff !important;
+        font-size: 9px !important;
+        padding: 5px !important;
+        margin-top: 6px !important;
+        width: auto!important;
+
+}
+
+#captchaBackground {
+  height: 120px;
+  width: 150px;
+  background-color:yellowgreen;
+ /* background-image: url("https://www.transparenttextures.com/patterns/light-toast.png");*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#captcha {
+  margin-bottom: 0em;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+.center {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+#submit {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+#textBox {
+  height: 20px;
+  width: 80px;
+}
+.redText {
+  color: red;
+  font-weight: bold;
+  font-size: 10px;
+}
+.greenText {
+  color: #1a3815;
+  font-weight: bold;
+   font-size: 10px;
+
+}
+.sb{
+	margin: auto ! important;
+    width: 30% ! important;
+}
+
+
