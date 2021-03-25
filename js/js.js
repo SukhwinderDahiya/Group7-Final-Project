@@ -1,8 +1,10 @@
 
 
+
 const form = document.getElementById('form');
 const name = document.getElementById('name');
 const password = document.getElementById('password');
+const password2 = document.getElementById('password2');
 const cname = document.getElementById('cname');
 const email = document.getElementById('email');
 
@@ -23,6 +25,7 @@ function checkInputs() {
     // trim to remove the whitespaces
     const nameValue = name.value.trim();
     const passwordValue = password.value.trim();
+    const password2Value = password2.value.trim();
     const cnameValue = cname.value.trim();
     const emailValue = email.value.trim();
     
@@ -37,11 +40,35 @@ function checkInputs() {
         setSuccessFor(name);
     }
 
-    if (passwordValue === '') {
+    /*if (passwordValue === '') {
         setErrorFor(password, 'Password cannot be blank');
     } else {
         setSuccessFor(password);
+    }*/
+
+
+
+
+ if (passwordValue === '') {
+        setErrorFor(password, 'Password cannot be blank');
+    } else if (!confirmpassword(passwordValue)) {
+        setErrorFor(password, 'min 8 letter password, with at least a symbol, upper and lower case letters and a number');
+    } else {
+        setSuccessFor(password);
     }
+
+    if (password2Value === '') {
+        setErrorFor(password2, 'Confirm Password cannot be blank');
+    } else if (passwordValue !== password2Value) {
+        setErrorFor(password2, 'Confirm Password does not match');
+    } else {
+        setSuccessFor(password2);
+    }
+
+
+
+
+
 
     if (cnameValue === '') {
         setErrorFor(cname, 'Compny name cannot be blank');
@@ -74,6 +101,8 @@ function checkInputs() {
     
 }
 
+
+
 function setErrorFor(input, message) {
     const formControl = input.parentElement;
     const small = formControl.querySelector('small');
@@ -90,6 +119,10 @@ function isEmail(email) {
     return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 }
 
+function confirmpassword(password) {
+    var re = /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+    return re.test(password);
+}
 
 
 /*Captcha*/
@@ -215,18 +248,7 @@ function singup(){
     msgb("Please Enter Email");
     return false;
   }
-  if (tc(".pwd")==null || tc(".pwd")=="") {
-    msgb("Please Enter Password");
-    return false;
-  }
-  if (tc(".pwd")!=tc(".conpwd")) {
-    msgb("Password Miss match");
-    return false;
-  }
-  if (size(".pwd") <= 10) {
-    msgb("Minimum Password length 10");
-    return false;
-  }
+  
 }
 
 /*Map*/
