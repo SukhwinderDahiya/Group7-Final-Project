@@ -4,7 +4,8 @@
 
 <link rel="stylesheet" type="text/css" href="style.css" />
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 <div id="wrap">
@@ -31,13 +32,19 @@
       <div class="feat_prod_box_details">
         <div class="prod_img"><a href="#"><img src="images/images (3).jpeg" alt="" border="0" /></a> <br />
           <br />
-          <!-- <a href="images/images (3).jpeg" rel="lightbox"><img src="images/zoom.gif" alt="" border="0" /></a> --> </div>
+         </div>
         <div class="prod_det_box">
           <div class="box_top"></div>
           <div class="box_center">
             <div class="prod_title">Details</div>
             <p class="details">Best Branding <br>  Delivery On Time <br>  Free Accessories <br> 100% Organic <br> </p>
-            <div class="prices"><strong>PRICE:</strong> <span class="currencyss currFont"  data-currencyName="usd" data-currencyName="eur" data-currencyName="gbp" data-currencyName="aud">100 USD</span></div>
+            <div class="prices"><strong>PRICE:</strong>
+              <span class="input-group-addon currency-symbol currFont">$</span>
+              <input type="text" disabled="disabled" class="form-control currency-amount currFont" id="inlineFormInputGroup" value="100" placeholder="100" size="8">
+              
+
+
+            </div>
             <div class="prices"><strong>COLORS:</strong> <span class="colors"><img src="images/color1.gif" alt="" border="0" /></span> <span class="colors"><img src="images/color2.gif" alt="" border="0" /></span> <span class="colors"><img src="images/color3.gif" alt="" border="0" /></span> </div>
             <a href="#" class="more"><img src="images/order_now.gif" alt="" border="0" /></a>
             <div class="clear"></div>
@@ -51,13 +58,18 @@
 <div class="feat_prod_box_details">
         <div class="prod_img"><a href="#"><img src="images/product1.jpg" alt="" border="0" /></a> <br />
           <br />
-          <!-- <a href="images/product1.jpg" rel="lightbox"><img src="images/zoom.gif" alt="" border="0" /></a>  --></div>
+          </div>
         <div class="prod_det_box">
           <div class="box_top"></div>
           <div class="box_center">
             <div class="prod_title">Details</div>
             <p class="details">Best Branding <br>  Delivery On Time <br>  Free Accessories <br> 100% Organic <br> </p>
-            <div class="price"><strong> PRICE:</strong> <span class="currencyss currFont" data-currencyName="usd" data-currencyName="eur" data-currencyName="gbp" data-currencyName="aud">250 USD</span></div>
+            <div class="price"><strong> PRICE:</strong> 
+
+              <span class="input-group-addon currency-symbol currFont">$</span>
+              <input type="text" disabled="disabled" class="form-control currency-amount currFont" id="inlineFormInputGroup2" value="200" placeholder="100" size="8">
+
+            </div>
             <div class="price"><strong> COLORS:</strong> <span class="colors"><img src="images/color1.gif" alt="" border="0" /></span> <span class="colors"><img src="images/color2.gif" alt="" border="0" /></span> <span class="colors"><img src="images/color3.gif" alt="" border="0" /></span> </div>
             <a href="#" class="more"><img src="images/order_now.gif" alt="" border="0" /></a>
             <div class="clear"></div>
@@ -71,13 +83,18 @@
       <div class="feat_prod_box_details">
         <div class="prod_img"><a href="#"><img src="images/download (2).jpeg" alt="" border="0" /></a> <br />
           <br />
-         <!--  <a href="images/download (2).jpeg" rel="lightbox"><img src="images/zoom.gif" alt="" border="0" /></a> --> </div>
+         </div>
         <div class="prod_det_box">
           <div class="box_top"></div>
           <div class="box_center">
             <div class="prod_title">Details</div>
             <p class="details">Best Branding <br>  Delivery On Time <br>  Free Accessories <br> 100% Organic <br> </p>
-            <div class="price"><strong>PRICE:</strong> <span class="currencyss currFont" data-currencyName="usd" data-currencyName="eur" data-currencyName="gbp" data-currencyName="aud">150 USD</span></div>
+            <div class="price"><strong>PRICE:</strong> 
+
+            <span class="input-group-addon currency-symbol currFont">$</span>
+              <input type="text" disabled="disabled" class="form-control currency-amount currFont" id="inlineFormInputGroup3" value="200" placeholder="100" size="8">
+
+            </div>
             <div class="price"><strong>COLORS:</strong> <span class="colors"><img src="images/color1.gif" alt="" border="0" /></span> <span class="colors"><img src="images/color2.gif" alt="" border="0" /></span> <span class="colors"><img src="images/color3.gif" alt="" border="0" /></span> </div>
             <a href="#" class="more"><img src="images/order_now.gif" alt="" border="0" /></a>
             <div class="clear"></div>
@@ -121,13 +138,22 @@
       
       <div class="row">
       <div class="input-field col s1">
-          <label class="currency">Currency:</label>
-    <select class="selectedd" id="currencySelector">
-          <option  value="usd"selected>USD</option>
-          <option value="aud">AUD</option>
-          <option value="eur">EUR</option>
-          <option value="gbp">GBP</option>
-    </select>
+          <label class="currency" for="inlineFormInputGroup">Currency:</label>
+    
+    <div class="input-group-addon currency-addon">
+
+        <select class="currency-selector selectedd" id="currencySelector" onchange="changeCurrency()">
+          <option data-symbol="$">USD</option>
+          <option  data-symbol="$">AUD</option>
+          <option data-symbol="£">GBP</option>
+          <option data-symbol="€">EUR</option>
+          
+        </select>
+
+      </div>
+    
+  
+
     
   </div>
 </div>
