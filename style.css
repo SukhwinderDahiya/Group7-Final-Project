@@ -474,7 +474,7 @@ border:1px #CCCCCC solid;
 }
 .currency{
 float:left;
-padding:0 0 0 20px;
+padding:0 0 0 0px;
 }
 .currency a{
 text-decoration:none;
@@ -482,10 +482,10 @@ color:#333333;
 padding:3px;
 border:1px #eeedee solid;
 }
-.currency a.selected{
+.selectedd{
 text-decoration:none;
 color:#fff;
-padding:3px;
+
 border:1px #eeedee solid;
 background-color:#FF9900;
 font-weight:bold;
@@ -920,19 +920,20 @@ position:absolute;
 /*Captcha Css*/
 .refbutton{
         background: green !important;
-        border: 2px solid #0072ff !important;
+        border: 2px solid #0000 !important;
         border-radius: 4px !important;
         color: #fff !important;
         font-size: 10px !important;
         padding: 5px !important;
         margin-top: 6px !important;
         width: auto!important;
+            float: left !important;
 
 }
 
 .subbutton{
         background: chocolate !important;
-        border: 2px solid #0072ff !important;
+        border: 2px solid #0000 !important;
         border-radius: 4px !important;
         color: #fff !important;
         font-size: 9px !important;
@@ -987,3 +988,18 @@ align-items: center;
 }
 
 
+input.select-dropdown {
+  color: #26a69a;
+}
+.caret {
+  background:url("http://svgshare.com/i/3Bc.svg") no-repeat 90% 50%;
+  width:20px;
+  height:auto;
+}
+.currencies { display:none }
+
+.currFont{
+      color: red;
+    font-size: 100%;
+    font-weight: 700;
+}
