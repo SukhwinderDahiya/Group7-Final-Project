@@ -1,6 +1,5 @@
 
 
-
 const form = document.getElementById('form');
 const name = document.getElementById('name');
 const password = document.getElementById('password');
@@ -293,3 +292,6 @@ function initialise() {
         google.maps.event.addDomListener(window, 'resize', function() { map.setCenter(myLatlng); }); // Keeps the Pin Central when resizing the browser on responsive sites
     }
     google.maps.event.addDomListener(window, 'load', initialise); // Execute our 'initialise' function once the page has loaded.
+
+
+
