@@ -4,8 +4,9 @@ background-color:#c0c0c0;
 font-family:Arial, Helvetica, sans-serif;
 padding:0;
 font-size:12px;
-margin:0px auto auto auto;
+margin:0;
 color:#000000;
+
 }
 a{
 color:#990000;
@@ -23,18 +24,7 @@ p.details{
 padding:5px 15px 5px 15px;
 font-size:11px;
 }
-p.details_cart{
-clear:both;
-padding:25px 30px 5px 0px;
-font-size:11px;
-font-style:italic;
-}
 
-p.more_details{
-padding:25px 20px 0px 20px;
-font-size:11px;
-
-}
 #wrap{
 width:900px;
 height: auto;
@@ -51,7 +41,7 @@ padding:5px 0 0 30px;
 
 }
 /*-----------------------------menu-------------------*/
-#menu{
+/*#menu{
 width:628px;
 height:41px;
 margin:55px 0 0 26px;
@@ -83,7 +73,7 @@ color:#fff;
 font-size:13px;
 line-height:27px;
 }
-#menu ul li.selected a{
+#menu a .selected {
 height:27px;
 display:block;
 padding:0px 10px 0 10px;
@@ -99,7 +89,7 @@ background:url(images/menu_bt_bg.gif) repeat-x center;
 #menu ul li a:hover{
 background:url(images/menu_bt_bg.gif) repeat-x center;
 }
-
+*/
 
 
 /*------------------------------------center content--------------------*/
@@ -304,55 +294,7 @@ background-color:#fff;
 border:1px #DFDFDF solid;
 float:left;
 }
-input.register{
-width:71px;
-height:25px;
-border:none;
-cursor:pointer;
-text-align:center;
-float:right;
-color:#FFFFFF;
-background:url(images/register_bt.gif) no-repeat center;
-}
-a.contact{
-width:53px;
-height:24px;
-display:block;
-float:right;
-margin:0 0 0 10px;
-background:url(images/contact_bt.gif) no-repeat center;
-text-decoration:none;
-text-align:center;
-line-height:24px;
-color:#fff;
-}
-a.checkout{
-width:71px;
-height:25px;
-display:block;
-float:right;
-margin:10px 30px 0 10px;
-background:url(images/register_bt.gif) no-repeat center;
-text-decoration:none;
-text-align:center;
-line-height:25px;
-color:#fff;
-}
-a.continue{
-width:71px;
-height:25px;
-display:block;
-float:left;
-margin:10px 0 0 0px;
-background:url(images/register_bt.gif) no-repeat center;
-text-decoration:none;
-text-align:center;
-line-height:25px;
-color:#fff;
-}
-.terms{
-padding:0 0 0 80px;
-}
+
 .form_subtitle{
 position:absolute;
 top:-11px;
@@ -366,6 +308,7 @@ color:#FFFFFF;
 font-size:11px;
 line-height:20px;
 }
+/*pagination*/
 
 div.pagination {
 width:420px;
@@ -460,18 +403,8 @@ margin:10px 0 10px 0;
 
 
 
-/*-----------------------languages_box---------*/
-.languages_box{
-padding:0 0 5px 0;
-float:left;
-}
-.languages_box a{
-padding:0 2px 0 2px;
-}
-.languages_box a.selected{
-padding:2px 2px 0 2px;
-border:1px #CCCCCC solid;
-}
+/*-----------------------currency_box---------*/
+
 .currency{
 float:left;
 padding:0 0 0 0px;
@@ -658,88 +591,6 @@ position:absolute;
   font-size: 16px;
   padding: 16px 32px;
 }
-
-
-#lightbox{
-	position: absolute;
-	left: 0;
-	width: 100%;
-	z-index: 100;
-	text-align: center;
-	line-height: 0;
-	}
-
-#lightbox a img{ border: none; }
-
-#outerImageContainer{
-	position: relative;
-	background-color: #fff;
-	width: 250px;
-	height: 250px;
-	margin: 0 auto;
-	}
-
-#imageContainer{
-	padding: 10px;
-	}
-
-#loading{
-	position: absolute;
-	top: 40%;
-	left: 0%;
-	height: 25%;
-	width: 100%;
-	text-align: center;
-	line-height: 0;
-	}
-#hoverNav{
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	z-index: 10;
-	}
-#imageContainer>#hoverNav{ left: 0;}
-#hoverNav a{ outline: none;}
-
-#prevLink, #nextLink{
-	width: 49%;
-	height: 100%;
-	background: transparent url(../images/blank.gif) no-repeat; /* Trick IE into showing hover */
-	display: block;
-	}
-#prevLink { left: 0; float: left;}
-#nextLink { right: 0; float: right;}
-#prevLink:hover, #prevLink:visited:hover { background: url(../images/prevlabel.gif) left 15% no-repeat; }
-#nextLink:hover, #nextLink:visited:hover { background: url(../images/nextlabel.gif) right 15% no-repeat; }
-
-
-#imageDataContainer{
-	font: 10px Verdana, Helvetica, sans-serif;
-	background-color: #fff;
-	margin: 0 auto;
-	line-height: 1.4em;
-	overflow: auto;
-	width: 100%	
-	}
-
-#imageData{	padding:0 10px; color: #666; }
-#imageData #imageDetails{ width: 70%; float: left; text-align: left; }	
-#imageData #caption{ font-weight: bold;	}
-#imageData #numberDisplay{ display: block; clear: left; padding-bottom: 1.0em;	}			
-#imageData #bottomNavClose{ width: 66px; float: right;  padding-bottom: 0.7em;	}	
-		
-#overlay{
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 90;
-	width: 100%;
-	height: 500px;
-	background-color: #000;
-	}
-
 
 
 
@@ -1003,3 +854,245 @@ input.select-dropdown {
     font-size: 100%;
     font-weight: 700;
 }
+
+
+
+
+/* Screen reader only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+/* Button styling */
+.menu-toggle {
+  display: inline-block;
+  padding: .75em 15px;
+  line-height: 1em;
+  font-size: 1em;
+  background: #900 !important;
+    color: fff !important;
+  cursor: pointer;
+}
+
+.menu-toggle:hover,
+#main-menu-checkbox:focus ~ header .menu-toggle {
+  color: #c00;
+  outline: auto;
+}
+
+#main-menu-checkbox {
+  position: absolute;
+  left: -100vw; /* get it off the screen */
+}
+
+/*
+ Default styles + Mobile first
+ Offscreen menu style
+*/
+.main-menu {
+  position: absolute;
+  left: -200px;
+  top: 0;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: visible;
+  transition: left 0.3s ease,
+              box-shadow 0.3s ease;
+  z-index: 999;
+}
+
+.main-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 2.5em 0 0;
+  /* Hide shadow w/ -8px while 'closed' */
+  -webkit-box-shadow: -8px 0 8px rgba(0,0,0,.5);
+     -moz-box-shadow: -8px 0 8px rgba(0,0,0,.5);
+          box-shadow: -8px 0 8px rgba(0,0,0,.5);
+  min-height: 100%;
+  width: 200px;
+  background: #1a1a1a;
+}
+
+.main-menu a,
+.main-menu .menu-close {
+  display: block;
+  padding: .75em 15px;
+  line-height: 1em;
+  font-size: 1em;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #383838;
+}
+
+.main-menu li:first-child a {
+  border-top: 1px solid #383838;
+}
+
+.main-menu a:hover,
+.main-menu a:focus,
+.main-menu .menu-close:hover,
+#main-menu-checkbox:focus ~ header .menu-close {
+  background: #990000;
+  text-decoration: underline;
+}
+
+.main-menu .menu-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+
+/*
+ On small devices, allow it to toggle...
+*/
+/*
+ :target for non-JavaScript
+ aria-expanded="true/false" will be for JavaScript
+*/
+#main-menu-checkbox:checked ~ header .main-menu,
+.main-menu[aria-expanded="true"] {
+  left: 0;
+  outline: none;
+  -moz-box-shadow: 3px 0 12px rgba(0,0,0,.25);
+  -webkit-box-shadow: 3px 0 12px rgba(0,0,0,.25);
+  box-shadow: 3px 0 12px rgba(0,0,0,.25);
+}
+
+#main-menu-checkbox:checked ~ header .menu-close,
+.main-menu[aria-expanded="true"] .menu-close {
+  z-index: 1001;
+}
+
+#main-menu-checkbox:checked ~ header .main-menu ul,
+.main-menu[aria-expanded="true"] ul {
+  position: relative;
+  z-index: 1000;
+}
+
+/* 
+ We could us `.main-menu:target:after`, but
+ it wouldn't be clickable.
+*/
+#main-menu-checkbox:checked ~ header .backdrop,
+.main-menu[aria-expanded="true"] + .backdrop {
+  position: absolute;
+  display: block;  
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 998;
+  background: #000;
+  background: rgba(0,0,0,.85);
+  cursor: default;
+
+}
+
+@supports (position: fixed) {
+  .main-menu,
+  #main-menu-checkbox:checked ~ header .backdrop,
+  .main-menu[aria-expanded="true"] + .backdrop {
+    position: fixed;
+  }
+}
+
+/*
+ Larger screen styling
+ Horizontal menu
+*/
+@media (min-width: 768px) {
+  .menu-toggle,
+  .main-menu .menu-close,
+  #main-menu-checkbox {
+    display: none;
+  }
+  
+  /* Undo positioning of off-canvas menu */
+  .main-menu {
+    position: relative;
+    left: auto;
+    top: auto;
+    height: auto;
+    overflow-y: auto; /* fix dumb MS Edge scrollbar issue */
+  }
+  
+  .main-menu ul {
+    display: flex;
+    
+    /* Undo off-canvas styling */
+    padding: 0;
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
+    height: auto;
+    width: auto;
+    background: none;
+  }
+  
+  .main-menu a {
+   
+color: fff;
+        border: 0 !important;
+    background: #8d3400;
+    font-size: 16px; /* Remove borders from off-canvas styling */
+  }
+  
+  .main-menu a:hover,
+  .main-menu a:focus {
+   background: #4CAF50;
+color: fff;
+  }
+}
+
+
+
+header {
+  padding: 50px;
+  display: flex;
+  align-items: baseline;
+
+}
+
+
+a.checkout{
+width:71px;
+height:25px;
+display:block;
+float:right;
+margin:10px 30px 0 10px;
+background:url(images/register_bt.gif) no-repeat center;
+text-decoration:none;
+text-align:center;
+line-height:25px;
+color:#fff;
+}
+a.continue{
+width:71px;
+height:25px;
+display:block;
+float:left;
+margin:10px 0 0 0px;
+background:url(images/register_bt.gif) no-repeat center;
+text-decoration:none;
+text-align:center;
+line-height:25px;
+color:#fff;
+}
+
+
+
+.selected{
+background: #4CAF50 !important;
+    color: fff !important;
+
+    }
