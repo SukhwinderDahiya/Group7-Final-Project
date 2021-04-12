@@ -2,8 +2,9 @@
 <html >
 <head>
 <title>Ayurveda-Place to buy all organic products</title>
-
-<link rel="stylesheet" type="text/css" href="style.css" />
+<meta name="viewport" content=" width=device-width; initial-scale=1.0; user-scalable=0;" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> 
+ <link rel="stylesheet" type="text/css" href="style.css" />
 <link rel="stylesheet" type="text/css" href="myAccount.css" />
 </head>
 <body>
@@ -11,17 +12,37 @@
   <div class="header">
     <div class="logo"><a href="#"><img src="images/images.png" alt="" border="0" /></a>
     </div>
-    <div id="menu">
-      <ul>
-        <li><a href="index.html">Home</a></li>
+    <input id="main-menu-checkbox" type="checkbox">
+
+<header>
+  <label for="main-menu-checkbox" class="menu-toggle">
+    <span class="sr-only">Open main menu</span>
+    <span class="fa fa-bars" aria-hidden="true"></span>
+  </label>
+  
+  <nav id="main-menu" role="navigation" class="main-menu" aria-expanded="false" aria-label="Main menu">
+    <label for="main-menu-checkbox"class="menu-close">
+      <span class="sr-only">Close main menu</span>
+      <span class="fa fa-close" aria-hidden="true"></span>
+    </label>
+
+    <ul>
+        <li ><a  href="index.html">Home</a></li>
         <li><a href="about.html">About us</a></li>
-        <li><a href="category.html">Offers</a></li>
+       <li><a href="category.html">Offers</a></li>
         <li><a href="details.html">Products</a></li>
-        <li class="selected"><a href="myaccount.html">My Account</a></li>
+        <li class="selected"><a class="selected" href="myaccount.html">My Account</a></li>
         <li><a href="register.html">Register</a></li>
         <li ><a href="contact.html">Contact Us</a></li>
       </ul>
-    </div>
+  </nav>
+  <label for="main-menu-checkbox"
+     class="backdrop"
+     tabindex="-1"
+     aria-hidden="true" hidden></label>
+</header>
+
+
   </div>
   <div class="center_content">
     <div class="left_content">
@@ -147,7 +168,7 @@ Creating an account has many benefits: check out faster, keep more than one addr
 </div>
 
 <script src="js/myAccount.js"></script>
-<script src="js/prices.js"></script>
+
 </body>
 
 </html>
