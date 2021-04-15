@@ -297,6 +297,7 @@ function initMap() {
     center: new google.maps.LatLng(43.7733, 79.3360),
     zoom: 16,
   });
+    const iconBase = "https://developers.google.com/maps/documentation/javascript/examples/full/images/";
 // Create markers.
   for (let i = 0; i < features.length; i++) {
     const marker = new google.maps.Marker({
