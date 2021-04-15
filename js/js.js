@@ -252,7 +252,7 @@ function singup(){
 
 /*Map*/
 function initialise() {
-        var myLatlng = new google.maps.LatLng(5.376964, 100.399383); // Add the coordinates
+        var myLatlng = new google.maps.LatLng(43.7733, 79.3360); // Add the coordinates
         var mapOptions = {
             zoom: 16, // The initial zoom level when your map loads (0-20)
             minZoom: 6, // Minimum zoom level allowed (0-20)
