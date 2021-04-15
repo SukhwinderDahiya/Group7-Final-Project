@@ -535,19 +535,12 @@ figure.slider2 figure figcaption {
 
 /*map*/
 
-.responsive-map{
-overflow: hidden;
-padding-bottom:56.25%;
-position:relative;
-height:0;
+#map {
+  height: 100%;
 }
-.responsive-map iframe{
-left:0;
-top:0;
-height:90%;
-width:100%;
-position:absolute;
-}
+
+
+
 
 
 /* faded Animation*/
@@ -870,6 +863,12 @@ input.select-dropdown {
   border: 0;
 }
 
+/**,
+*:before,
+*:after {
+  box-sizing: border-box;
+}*/
+
 /* Button styling */
 .menu-toggle {
   display: inline-block;
@@ -1010,7 +1009,7 @@ input.select-dropdown {
  Larger screen styling
  Horizontal menu
 */
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .menu-toggle,
   .main-menu .menu-close,
   #main-menu-checkbox {
