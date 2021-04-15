@@ -292,7 +292,7 @@ function singup(){
         google.maps.event.addDomListener(window, 'resize', function() { map.setCenter(myLatlng); }); // Keeps the Pin Central when resizing the browser on responsive sites
     }
     google.maps.event.addDomListener(window, 'load', initialise); // Execute our 'initialise' function once the page has loaded.*/
-function initMap() {
+function initialise() {
   map = new google.maps.Map(document.getElementById("map"), {
     center: new google.maps.LatLng(43.7733, 79.3360),
     zoom: 16,
