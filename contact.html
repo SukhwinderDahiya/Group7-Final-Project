@@ -47,10 +47,10 @@
       <div class="title"><span class="title_icon"><img src="images/bullet1.gif" alt="" /></span>Contact Us</div>
       <div class="feat_prod_box_details">
         <p class="details"> 
-        Please submit your questions below and we will respond within 48 hours during business days.</p>
+        Please submit your question below and we will respond within 48 hours during business week.</p>
         
  <div class="contact_form">
-  <div class="form_subtitle">All fields are requierd</div>
+  <div class="form_subtitle">all fields are requierd</div>
   
 <div class="form-signup" id="singup">
         <form action="#" method="get" onsubmit="return singup()">
@@ -79,7 +79,7 @@
           <div class="form_subtitle">Helpline number:</div>
          <p><strong>Contact Number:</strong>18XX-XXXX-XXX
           <br>
-          <strong>Timeing:</strong> Monday to Saturday 7:00 am to 8 pm</p>
+          <strong>Timeing:</strong> Monday to Saturday 7 am to 8 pm</p>
         </div>
  </div>
  <div class="clear"></div>
@@ -149,7 +149,7 @@
           <li><a href="#">Food Products</a></li>
           <li><a href="#">General Food & Spices</a></li>
           <li><a href="#">Honey</a></li>
-          <li><a href="#">Body or essential Oil</a></li>
+          <li><a href="#">Body Oil</a></li>
           <li><a href="#">Baby products</a></li>
         </ul>
       </div>
@@ -180,11 +180,9 @@
     <!--end of right content-->
     <div class="clear"></div>
 <div class="clear"></div>
- <div class="responsive-map">
-<iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=43.7733689,-79.3359707+(Lambton%20college)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
-</div>
-
-
+ <!--Google map-->
+ <div id="map"></div>
+    
  <div class="clear"></div>
       
   </div>
@@ -204,7 +202,10 @@
 </div>
 
 <script  src="js/js.js"></script>
-
+<script  src="js/map.js"></script>
+ 
+     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIwzALxUPNbatRBj3Xi1Uhp0fFzwWNBkE&libraries=places&callback=initMap">
+  </script>
 </body>
 
 </html>
